@@ -3,6 +3,8 @@ html,body{
     margin: 0%;
     font-size: 12px;
     font-family: Helvetica;
+    background-color: black;
+    /* color: white; */
 }
 nav{
     display: flex;
@@ -28,4 +30,39 @@ nav li a{
 
 nav li a:hover{
 color: black;
+}
+
+/* Aqui comienza .main_section */
+
+.main_section{
+    padding: 10%;
+    text-align: center;
+    color: white;
+}
+
+.products{
+    /* padding: 0%;
+    margin: 0%; */
+    background-image: url("../imagenes/banner1.jpg");
+    background-size:58%;
+    background-position: center;
+    padding: 20px;  
+     
+}
+.prod{
+    display: flex;
+    padding: 1%;
+    margin: 1%;
+}
+.product{
+   
+    padding: 20px;
+}
+
+.product .content{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+
 }
