@@ -4,12 +4,15 @@ html,body{
     font-size: 12px;
     font-family: Helvetica;
     background-color: black;
+    width: 100%;
+    max-width: 100%;
     /* color: white; */
 }
 nav{
     display: flex;
     background-color: rgb(250, 9, 9);
-    padding: 10px;
+    padding: 1%;
+    margin: 0%;
     color: white;
     justify-content: space-between;
     align-items: center ;
@@ -46,23 +49,62 @@ color: black;
     background-image: url("../imagenes/banner1.jpg");
     background-size:58%;
     background-position: center;
-    padding: 20px;  
+    padding: 1%;  
      
 }
 .prod{
     display: flex;
-    padding: 1%;
-    margin: 1%;
+  
+    margin-top:-2%;
+  
 }
 .product{
-   
-    padding: 20px;
+    width: 80%;
+    align-items: center;
+    object-position: center;
+    padding:-20%;
+    margin-top: -5%;
+    
 }
 
 .product .content{
     text-align: center;
     background-color: white;
-    padding: 20px;
-    margin: 20px;
+    padding: 5%;
+    margin: 25%;
+    padding-top: -10% ;
+    margin-top: 20%;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.imgContent{
+    width: 100%;
+    height: auto;
+    margin-top: -50%;
+    margin-left: -10%;
+    margin-bottom: -30%;
+    transform: scale(0.2, 0.2);
+       
+}
+
+.responsive{
+    width: 100%;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1200px){
+.prod{
+    
+    display: inline-table;
+    margin: 0%;
+    padding: 0%;
+    display: contents;
+    display: ;
+}
+.product{
+    padding: 10%;
+    margin-bottom: -50%;
+}
 
 }
