@@ -1,19 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+/* --------------------Variables */
+
+:root{
+    /* tipografía */
+    --fontRobot: 'Roboto Mono', monospace;
+    --normal:14px;
+    /* color */
+    --black-color: black;
+    --white-color: white;
+    --red-color: red;
+
+}
+/* --------------------Variables */
+
+
 html,body{
     padding: 0%;
     margin: 0%;
-    font-size: 12px;
-    font-family: Helvetica;
-    background-color: black;
+    font-size: var(--normal);
+    font-family: var(--fontRobot);
+    background-color: var(--black-color);
     width: 100%;
     max-width: 100%;
     /* color: white; */
 }
 nav{
     display: flex;
-    background-color: rgb(250, 9, 9);
+    background-color:var(--red-color);
     padding: 1%;
     margin: 0%;
-    color: white;
+    color: var(--black);
     justify-content: space-between;
     align-items: center ;
 }
@@ -27,12 +43,12 @@ nav li{
 }
 
 nav li a{
-    color: white;
+    color:var(--white-color);
     text-decoration: none;
 }
 
 nav li a:hover{
-color: black;
+color:var(--black-color);
 }
 
 /* Aqui comienza .main_section */
@@ -40,42 +56,38 @@ color: black;
 .main_section{
     padding: 10%;
     text-align: center;
-    color: white;
+    color:var(--white-color);
 }
 
 .products{
-    /* padding: 0%;
-    margin: 0%; */
     background-image: url("../imagenes/banner1.jpg");
     background-size:58%;
     background-position: center;
-    padding: 1%; 
-    
-     
+    padding: 1%;     
 }
+
 .prod{
     display: flex;
   
-    margin-top:-2%;
-  
+    margin-top:-2%;  
 }
+
 .product{
     width: 80%;
     align-items: center;
     object-position: center;
     padding:-20%;
     margin-top: -15%;
-    
 }
 
 .product .content{
     text-align: center;
-    background-color: white;
+    background-color:var(--white-color);
     padding: 5%;
     margin: 25%;
     padding-top: -10% ;
     margin-top: 20%;
-    font-size: 14px;
+    font-size: var(--normal:12px);
     box-shadow: 4px 4px #6f6969;
 }
 
@@ -85,16 +97,41 @@ color: black;
     margin-top: -50%;
     margin-left: -10%;
     margin-bottom: -30%;
-    transform: scale(0.2, 0.2);
-       
+    transform: scale(0.2, 0.2);   
 }
+
+/* Aqui terminamos con .main_section */
+
+
+
+/* Aqui vamos empezar con los botones */
+
+.mainButton{
+background-color:var(--red-color);
+color: var(--white-color);
+border: none;
+width: 100%;
+padding: 6%;
+font-size: var(--normal:12px);
+margin-top: 10%;
+cursor: pointer;
+border-radius: 15px;
+}
+
+.mainButton:hover{
+background-color: #ec3636;
+}
+
+/* Aqui terminamos con los botones */
 
 .responsive{
     width: 100%;
     max-width: 100%;
 }
 
-@media screen and (max-width: 1200px){
+/* Aqui hacemos .responsive a 1800px nuestro diseño */
+
+@media screen and (max-width: 1800px){
 .prod{
     
     display: inline-table;
@@ -107,22 +144,4 @@ color: black;
     padding: 10%;
     margin-bottom: -50%;
 }
-}
-
-/* Aqui vamos empezar con los botones */
-
-.mainButton{
-background-color: red;
-color: white;
-border: none;
-width: 100%;
-padding: 6%;
-font-size: 12px;
-margin-top: 10%;
-cursor: pointer;
-border-radius: 15px;
-}
-
-.mainButton:hover{
-background-color: #ec3636;
 }
