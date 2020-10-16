@@ -4,12 +4,13 @@
 :root{
     /* tipografía */
     --fontRobot: 'Roboto Mono', monospace;
+    --big:18px;
     --normal:14px;
+    --small:12px;
     /* color */
     --black-color: black;
     --white-color: white;
     --red-color: red;
-
 }
 /* --------------------Variables */
 
@@ -20,10 +21,9 @@ html,body{
     font-size: var(--normal);
     font-family: var(--fontRobot);
     background-color: var(--black-color);
-    width: 100%;
-    max-width: 100%;
-    /* color: white; */
 }
+
+/* Aqui comienza el nav */
 nav{
     display: flex;
     background-color:var(--red-color);
@@ -48,59 +48,63 @@ nav li a{
 }
 
 nav li a:hover{
-color:var(--black-color);
+    color:var(--black-color);
 }
+/* Aqui termina el nav */
+
+
 
 /* Aqui comienza .main_section */
 
 .main_section{
-    padding: 10%;
+    padding: 2.5%;
     text-align: center;
     color:var(--white-color);
 }
 
-.products{
+.banner{
     background-image: url("../imagenes/banner1.jpg");
-    background-size:58%;
+    background-size:28%;
     background-position: center;
-    padding: 1%;     
+    padding: 1%;  
+    font-size: var(--big);   
 }
+/* Aqui termina el .main_section */
+
+
+
+
+/* Aqui empieza el prod */
 
 .prod{
+    width: 60%;
     display: flex;
-  
-    margin-top:-2%;  
+    margin: 20%;
+    justify-content: space-between;
+    margin-top:2%;
+    margin-bottom: 2%;
 }
 
-.product{
-    width: 80%;
-    align-items: center;
-    object-position: center;
-    padding:-20%;
-    margin-top: -15%;
-}
 
-.product .content{
+
+.product {
     text-align: center;
     background-color:var(--white-color);
-    padding: 5%;
-    margin: 25%;
-    padding-top: -10% ;
-    margin-top: 20%;
-    font-size: var(--normal:12px);
+    width: 30%;
+    font-size: var(--normal);
     box-shadow: 4px 4px #6f6969;
+    padding:2%;   
+}
+
+.content{
+    
 }
 
 .imgContent{
-    width: 100%;
-    height: auto;
-    margin-top: -50%;
-    margin-left: -10%;
-    margin-bottom: -30%;
-    transform: scale(0.2, 0.2);   
+    margin-bottom: 20%;
+    margin-top: 20%;
 }
-
-/* Aqui terminamos con .main_section */
+/* Aqui termina el .prod */
 
 
 
@@ -112,8 +116,7 @@ color: var(--white-color);
 border: none;
 width: 100%;
 padding: 6%;
-font-size: var(--normal:12px);
-margin-top: 10%;
+font-size: var(--normal);
 cursor: pointer;
 border-radius: 15px;
 }
@@ -121,27 +124,76 @@ border-radius: 15px;
 .mainButton:hover{
 background-color: #ec3636;
 }
-
 /* Aqui terminamos con los botones */
 
-.responsive{
-    width: 100%;
-    max-width: 100%;
+
+
+/* Aqui comienzan los productos  */
+.productBox{
+    display: flex;
+    margin: 10%;
+    justify-content: space-between;
 }
+  
+  
+  .contentBox{
+      padding: 5%;
+  }
+  
+  .box {
+      width: 30%;
+      align-items: center;
+      object-position: center; 
+      text-align: center;
+      font-size: var(--small);
+      background-color:var(--white-color);
+      box-shadow: 4px 4px #6f6969;
+  }
+  
+  .imgContentBox{
+      padding: 5%;
+  }
 
-/* Aqui hacemos .responsive a 1800px nuestro diseño */
+  /* Aqui terminan los .productos */
 
-@media screen and (max-width: 1800px){
-.prod{
+  /* <!-- Aqui empiezan las menciones --> */
+  .mentions{
+      text-align: center;
+      font-size: var(--big);
+      color: var(--white-color);
+      background-color: var(--red-color);
+      width: 80%;
+      margin: 10%;
+      border-radius: 20px;
+    }
+    /* <!-- Aqui terminan las menciones --> */
+
+    /* Aqui empizan las boxMentions */
     
-    display: inline-table;
-    margin: 0%;
-    padding: 0%;
-    display: contents;
-    display: ;
-}
-.product{
-    padding: 10%;
-    margin-bottom: -50%;
-}
-}
+    .productMentions{
+        display: flex;
+        margin: 5%;
+        justify-content: space-between;
+    }
+      
+      
+      .contentBoxMentions{
+          padding: 2%;
+      }
+      
+      .boxMentions {
+          width: 20%;
+          align-items: center;
+          object-position: left; 
+          text-align: left;
+          font-size: var(--small);
+          background-color:var(--white-color);
+          box-shadow: 4px 4px #6f6969;
+         
+      }
+      
+      .imgContentMentions{
+        margin: -2%;
+      }
+        
+    /* Aqui terminan las boxMentions */
