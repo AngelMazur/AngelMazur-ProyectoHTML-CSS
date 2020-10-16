@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap");
 /* --------------------Variables */
 
-:root{
+:root {
     /* tipografía */
-    --fontRobot: 'Roboto Mono', monospace;
-    --big:18px;
-    --normal:14px;
-    --small:12px;
+    --fontRobot: "Roboto Mono", monospace;
+    --big: 18px;
+    --normal: 14px;
+    --small: 12px;
     /* color */
     --black-color: black;
     --white-color: white;
@@ -14,8 +14,8 @@
 }
 /* --------------------Variables */
 
-
-html,body{
+html,
+body {
     padding: 0%;
     margin: 0%;
     font-size: var(--normal);
@@ -24,176 +24,179 @@ html,body{
 }
 
 /* Aqui comienza el nav */
-nav{
+nav {
     display: flex;
-    background-color:var(--red-color);
+    background-color: var(--red-color);
     padding: 1%;
     margin: 0%;
-    color: var(--black);
     justify-content: space-between;
-    align-items: center ;
+    align-items: center;
 }
 
 nav ul {
     display: flex;
 }
-nav li{
+nav li {
     padding-left: 20px;
     list-style: none;
 }
 
-nav li a{
-    color:var(--white-color);
+nav li a {
+    color: var(--white-color);
     text-decoration: none;
 }
 
-nav li a:hover{
-    color:var(--black-color);
+nav li a:hover {
+    color: var(--black-color);
 }
 /* Aqui termina el nav */
 
-
-
 /* Aqui comienza .main_section */
 
-.main_section{
+.main_section {
     padding: 2.5%;
     text-align: center;
-    color:var(--white-color);
+    color: var(--white-color);
 }
 
-.banner{
+.banner {
     background-image: url("../imagenes/banner1.jpg");
-    background-size:28%;
+    background-size: 28%;
     background-position: center;
-    padding: 1%;  
-    font-size: var(--big);   
+    padding: 1%;
+    font-size: var(--big);
 }
 /* Aqui termina el .main_section */
 
-
-
-
 /* Aqui empieza el prod */
 
-.prod{
+.prod {
     width: 60%;
     display: flex;
     margin: 20%;
     justify-content: space-between;
-    margin-top:2%;
+    margin-top: 2%;
     margin-bottom: 2%;
 }
 
-
-
 .product {
     text-align: center;
-    background-color:var(--white-color);
+    background-color: var(--white-color);
     width: 30%;
     font-size: var(--normal);
     box-shadow: 4px 4px #6f6969;
-    padding:2%;   
+    padding: 2%;
 }
 
-.content{
-    
+.content {
 }
 
-.imgContent{
+.imgContent {
     margin-bottom: 20%;
     margin-top: 20%;
 }
 /* Aqui termina el .prod */
 
-
-
 /* Aqui vamos empezar con los botones */
 
-.mainButton{
-background-color:var(--red-color);
-color: var(--white-color);
-border: none;
-width: 100%;
-padding: 6%;
-font-size: var(--normal);
-cursor: pointer;
-border-radius: 15px;
+.mainButton {
+    background-color: var(--red-color);
+    color: var(--white-color);
+    border: none;
+    width: 100%;
+    padding: 6%;
+    font-size: var(--normal);
+    cursor: pointer;
+    border-radius: 15px;
 }
 
-.mainButton:hover{
-background-color: #ec3636;
+.mainButton:hover {
+    background-color: #ec3636;
 }
 /* Aqui terminamos con los botones */
 
-
-
 /* Aqui comienzan los productos  */
-.productBox{
+.productBox {
     display: flex;
     margin: 10%;
     justify-content: space-between;
 }
-  
-  
-  .contentBox{
-      padding: 5%;
-  }
-  
-  .box {
-      width: 30%;
-      align-items: center;
-      object-position: center; 
-      text-align: center;
-      font-size: var(--small);
-      background-color:var(--white-color);
-      box-shadow: 4px 4px #6f6969;
-  }
-  
-  .imgContentBox{
-      padding: 5%;
-  }
 
-  /* Aqui terminan los .productos */
+.contentBox {
+    padding: 5%;
+}
 
-  /* <!-- Aqui empiezan las menciones --> */
-  .mentions{
-      text-align: center;
-      font-size: var(--big);
-      color: var(--white-color);
-      background-color: var(--red-color);
-      width: 80%;
-      margin: 10%;
-      border-radius: 20px;
-    }
-    /* <!-- Aqui terminan las menciones --> */
+.box {
+    width: 30%;
+    align-items: center;
+    object-position: center;
+    text-align: center;
+    font-size: var(--small);
+    background-color: var(--white-color);
+    box-shadow: 4px 4px #6f6969;
+}
 
-    /* Aqui empizan las boxMentions */
-    
-    .productMentions{
-        display: flex;
-        margin: 5%;
-        justify-content: space-between;
-    }
-      
-      
-      .contentBoxMentions{
-          padding: 2%;
-      }
-      
-      .boxMentions {
-          width: 20%;
-          align-items: center;
-          object-position: left; 
-          text-align: left;
-          font-size: var(--small);
-          background-color:var(--white-color);
-          box-shadow: 4px 4px #6f6969;
-         
-      }
-      
-      .imgContentMentions{
-        margin: -2%;
-      }
-        
-    /* Aqui terminan las boxMentions */
+.imgContentBox {
+    padding: 5%;
+}
+
+/* Aqui terminan los .productos */
+
+/* <!-- Aqui empiezan las menciones --> */
+.mentions {
+    text-align: center;
+    font-size: var(--big);
+    color: var(--white-color);
+    background-color: var(--red-color);
+    width: 80%;
+    margin: 10%;
+    border-radius: 20px;
+}
+/* <!-- Aqui terminan las menciones --> */
+
+/* Aqui empizan las boxMentions */
+
+.productMentions {
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+}
+
+.contentBoxMentions {
+    padding: 2%;
+}
+
+.boxMentions {
+    width: 20%;
+    align-items: center;
+    object-position: left;
+    text-align: left;
+    font-size: var(--small);
+    background-color: var(--white-color);
+    box-shadow: 4px 4px #6f6969;
+}
+
+.imgContentMentions {
+    margin: -2%;
+}
+
+/* Aqui terminan las boxMentions */
+
+/* Aqui empieza el footer */
+.final {
+    display: flex;
+    padding: 1%;
+    margin: 0%;
+    justify-content: space-between;
+    background: #313337 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.right {
+    list-style: none;
+    color: var(--white-color);
+}
+.left {
+    list-style: none;
+    color: var(--white-color);
+}
+/* Aqui termina el footer */
