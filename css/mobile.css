@@ -1,0 +1,35 @@
+@media (max-width: 600px){
+    body{
+        width: auto;
+    }
+    .prod{
+        display:inherit;
+        height: auto;
+        /* width: 100%; */
+    }
+    .product{
+        margin-top: 10%;
+        /* margin-left: 30%; */
+        padding: 5%;
+        width: auto;
+    }
+
+    .banner{
+        background-image: url("../imagenes/banner1.jpg");
+        background-size: 40%;
+        background-position: center;
+        padding: 1%;
+        font-size: var(--normal);
+    }
+    
+    .productBox, .productMentions{
+        display: inherit;
+        margin: 20%;
+    }
+    .box, .boxMentions{
+        width: 100%;
+        margin-top: 20%;
+    }
+   
+
+}
