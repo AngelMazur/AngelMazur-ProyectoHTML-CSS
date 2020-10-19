@@ -25,6 +25,8 @@ body {
 
 /* Aqui comienza el nav */
 nav {
+    top: 0;
+    position: sticky;
     display: flex;
     background-color: var(--red-color);
     padding: 1%;
@@ -48,6 +50,8 @@ nav li a {
 
 nav li a:hover {
     color: var(--black-color);
+    font-weight: bold;
+    text-decoration: underline;
 }
 /* Aqui termina el nav */
 
@@ -61,7 +65,7 @@ nav li a:hover {
 
 .banner {
     background-image: url("../imagenes/banner1.jpg");
-    background-size: 28%;
+    background-size: 30%;
     background-position: center;
     padding: 1%;
     font-size: var(--big);
@@ -71,7 +75,7 @@ nav li a:hover {
 /* Aqui empieza el prod */
 
 .prod {
-    width: 60%;
+    /* width: 60%; */
     display: flex;
     margin: 20%;
     justify-content: space-between;
@@ -185,11 +189,12 @@ nav li a:hover {
 /* Aqui empieza el footer */
 .final {
     display: flex;
-    padding: 1%;
+    padding: .5rem 2rem;
     margin: 0%;
     justify-content: space-between;
     background: #313337 0% 0% no-repeat padding-box;
     opacity: 1;
+    box-sizing: border-box;
 }
 .right {
     list-style: none;
