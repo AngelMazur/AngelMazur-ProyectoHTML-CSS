@@ -1,16 +1,21 @@
 :root {
     --col-width: 8.33333333333%;
-  }
-  .container {
+}
+.container {
     color: white;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
-  }
-  
-  .row {
+}
+
+.row {
     display: flex;
-  }
-  
+    margin: 5%; 
+}
+
+.fadeIn{
+    font-size: 18px;
+}
+
   .col-1 {
     width: var(--col-width);
   }
@@ -40,6 +45,7 @@
   }
   
   .col-8 {
+    
     width: calc(var(--col-width) * 8);
   }
   
@@ -58,3 +64,15 @@
   .col-12 {
     width: calc(var(--col-width) * 12);
   }
+
+  [class*="col-"] { /* selecciona los atributos class cuyos valores tenga una subcadena col-*/
+    padding: 10px;
+  }
+  @media (max-width:900px){
+    .row{
+        display: inherit;
+    }  
+    [class*="col-"] { 
+        width: 100%;
+    }
+}
