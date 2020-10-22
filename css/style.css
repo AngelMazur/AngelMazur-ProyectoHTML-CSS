@@ -11,6 +11,8 @@
     --black-color: black;
     --white-color: white;
     --red-color: red;
+    /* shadow */
+    --box: 4px 4px #6f6969;
 }
 /* --------------------Variables */
 
@@ -185,6 +187,31 @@ nav li a:hover {
 }
 
 /* Aqui terminan las boxMentions */
+
+/* Aqui empieza venta */
+.containerModule{
+    color: white;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.moduloPago{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    color: var(--black-color);
+    padding: 5%;  
+}
+
+.imgModuloPago{
+    text-align: center;
+}
+
+
+
+
+/* Aqui termina venta */
+
 
 /* Aqui empieza el footer */
 .final {
