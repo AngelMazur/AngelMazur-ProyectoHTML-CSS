@@ -208,7 +208,6 @@ nav li a:hover {
     margin: auto;
     margin-top: 8%;
     margin-bottom: 8%;
-    
 }
 .moduloPago{
     background-color: var(--white-color);
@@ -220,7 +219,11 @@ nav li a:hover {
     text-align: center;
 }
 
-
+.moduloPago .mainButton{
+    margin-top: 12px;
+    padding: 0%;
+    border-radius: 5px;
+}
 /* Aqui termina venta */
 
 
