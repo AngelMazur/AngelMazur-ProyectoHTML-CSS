@@ -23,6 +23,8 @@ body {
     font-size: var(--normal);
     font-family: var(--fontRobot);
     background-color: var(--black-color);
+    position: relative;
+    height: 100%;
 }
 
 label{
@@ -48,6 +50,7 @@ nav {
     margin: 0%;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 nav ul {
@@ -208,6 +211,7 @@ nav li a:hover {
     margin: auto;
     margin-top: 8%;
     margin-bottom: 8%;
+    min-width: ;
 }
 .moduloPago{
     background-color: var(--white-color);
@@ -236,6 +240,9 @@ nav li a:hover {
     background: #313337 0% 0% no-repeat padding-box;
     opacity: 1;
     box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .right {
     list-style: none;
