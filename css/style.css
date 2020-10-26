@@ -23,8 +23,7 @@ body {
     font-size: var(--normal);
     font-family: var(--fontRobot);
     background-color: var(--black-color);
-    position: relative;
-    height: 100%;
+   
 }
 
 label{
@@ -110,8 +109,6 @@ nav li a:hover {
     padding: 2%;
 }
 
-.content {
-}
 
 .imgContent {
     margin-bottom: 20%;
@@ -134,6 +131,9 @@ nav li a:hover {
 
 .mainButton:hover {
     background-color: #ec3636;
+}
+.row button{
+    padding: 1%;
 }
 /* Aqui terminamos con los botones */
 
@@ -211,7 +211,6 @@ nav li a:hover {
     margin: auto;
     margin-top: 8%;
     margin-bottom: 8%;
-    min-width: ;
 }
 .moduloPago{
     background-color: var(--white-color);
@@ -240,11 +239,12 @@ nav li a:hover {
     background: #313337 0% 0% no-repeat padding-box;
     opacity: 1;
     box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+ 
 }
-.right {
+.right{
+    list-style: none;
+}
+.right a{
     list-style: none;
     color: var(--white-color);
 }
